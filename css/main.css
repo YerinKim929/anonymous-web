@@ -1,0 +1,80 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+  height: 1500px;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #f2eff5;
+  top: 0;
+  z-index: 9;
+}
+header > .inner {
+  height: 100px;
+}
+header .logo {
+  height: 64px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .main-menu {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  margin: auto;
+}
+header .main-menu ul.menu {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .main-menu ul.menu li {
+  position: relative;
+}
+header .main-menu ul.menu li::before {
+  content: "";
+  width: 2px;
+  height: 12px;
+  background-color: #cfccd3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .main-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .main-menu ul.menu li a {
+  font-size: 20px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+  justify-content: center;
+  align-items: center;
+}
+header .main-menu ul.menu li a:hover {
+  color: #000;
+}
