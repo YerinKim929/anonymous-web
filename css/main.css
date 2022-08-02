@@ -18,6 +18,32 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.btn {
+  width: 150px;
+  padding: 10px;
+  border: 2px solid #6926ac;
+  border-radius: 4px;
+  color: #6926ac;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #6926ac;
+  color: #fff;
+}
+.btn.btn--reverse {
+  background-color: #6926ac;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #6926ac;
+}
 
 /* HEADER */
 header {
@@ -96,4 +122,41 @@ header .main-menu ul.menu li a:hover {
 }
 .visual .fade-in {
   opacity: 0;
+}
+
+/* SIGN */
+.sign {
+  position: relative;
+}
+.sign .bg-left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #f2eff5;
+  top: 0;
+  left: 0;
+}
+.sign .bg-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #6926ac;
+  top: 0;
+  right: 0;
+}
+.sign .inner {
+  height: 300px;
+}
+.sign .btn-group {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 250px;
+  display: flex;
+}
+.sign .btn-group .btn.sign-up {
+  margin-right: 20px;
+}
+.sign .btn-group .btn.sign-in {
+  width: 120px;
 }
