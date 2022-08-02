@@ -26,6 +26,7 @@ header {
   background-color: #f2eff5;
   top: 0;
   z-index: 9;
+  border-bottom: 1px solid #c8c8c8;
 }
 header > .inner {
   height: 100px;
@@ -77,4 +78,22 @@ header .main-menu ul.menu li a {
 }
 header .main-menu ul.menu li a:hover {
   color: #000;
+}
+
+/* VISUAL */
+.visual {
+  background-image: url("../images/visual_bg.jpg");
+  background-position: center;
+}
+.visual .inner {
+  height: 700px;
+}
+.visual .title {
+  position: absolute;
+  top: 400px;
+  left: 55%;
+  margin: auto;
+}
+.visual .fade-in {
+  opacity: 0;
 }
