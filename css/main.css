@@ -116,19 +116,23 @@ header .main-menu ul.menu li a:hover {
 }
 .visual .title {
   position: absolute;
-  top: 400px;
-  left: 55%;
-  margin: auto;
+  top: 200px;
+  left: 300px;
+}
+.visual .sub-title {
+  position: absolute;
+  top: 330px;
+  left: 200px;
 }
 .visual .fade-in {
   opacity: 0;
 }
 
-/* SIGN */
-.sign {
+/* START */
+.start {
   position: relative;
 }
-.sign .bg-left {
+.start .bg-left {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -136,27 +140,28 @@ header .main-menu ul.menu li a:hover {
   top: 0;
   left: 0;
 }
-.sign .bg-right {
+.start .bg-right {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: #6926ac;
+  background-color: #272727;
   top: 0;
   right: 0;
 }
-.sign .inner {
+.start .inner {
   height: 300px;
+  background-image: url("../images/start_bg.png");
 }
-.sign .btn-group {
+.start .btn-group {
   position: absolute;
   left: 0;
   bottom: 30px;
   width: 250px;
   display: flex;
 }
-.sign .btn-group .btn.sign-up {
+.start .btn-group .btn.sign-up {
   margin-right: 20px;
 }
-.sign .btn-group .btn.sign-in {
+.start .btn-group .btn.sign-in {
   width: 120px;
 }
