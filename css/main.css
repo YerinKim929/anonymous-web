@@ -165,3 +165,28 @@ header .main-menu ul.menu li a:hover {
 .start .btn-group .btn.sign-in {
   width: 120px;
 }
+
+/* PICTURE */
+.picture {
+  height: 700px;
+  background-color: #272727;
+  position: relative;
+}
+.picture .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc(
+    (819px * 3 + 20px) / -2
+  ); /*마이너스 값으로 가로 너비 절반 만큼의 값 입력 */
+}
+.picture .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 1s;
+  position: relative;
+}
+.picture .swiper-slide-active {
+  opacity: 1;
+}
