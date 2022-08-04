@@ -1,0 +1,108 @@
+@import url("main.css");
+
+/* CREATE */
+.create {
+  background-image: url("../images/create_meeting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.create .inner {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create .medal {
+  width: 500px;
+  height: 500px;
+  perspective: 600px;
+}
+.create .medal .front,
+.create .medal .back {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.create .medal .front {
+  transform: rotateY(0deg);
+}
+.create .medal:hover .front {
+  transform: rotateY(-180deg);
+}
+.create .medal .back {
+  transform: rotateY(-180deg);
+}
+.create .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.create .medal .back .btn {
+  position: absolute;
+  top: 360px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* JOIN */
+.join {
+  background-color: #f2eff5;
+}
+.join .inner {
+  height: 400px;
+}
+.join .join-text {
+  position: absolute;
+  top: -170px;
+}
+.join .input-group {
+  display: flex;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+.join .input-group::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.join .input-group.meeting {
+  top: 200px;
+}
+.join .input-group.passward {
+  top: 250px;
+}
+.join .input-group .input {
+  height: 35px;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #272727;
+  outline: none;
+  font-size: 20px;
+}
+.join .input-group .input:focus {
+  border-color: #6926ac;
+}
+.join .input-group span {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 25px;
+  display: block;
+}
+.join a {
+  position: absolute;
+  top: 310px;
+  right: 0;
+}
