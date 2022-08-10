@@ -4,22 +4,52 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+         <link rel="stylesheet" href="./css/signin.css" />
         <title>Sign in</title>
     </head>
 
     <body>
         <!-- HEADER -->
         <header>
-            <div class="inner">
-              <a href="/" class="logo"
-                ><img src="./images/anonymous_logo.png" alt="ANONYMOUS"
-              /></a>
-              <div class="main-menu">
-                <ul class="menu">
-                  <li><a href="javascript:void(0)">Sign Up</a></li>
-                  <li><a href="create.html">Sign In</a></li>
-                </ul>
-              </div>
+          <div class="inner">
+            <a href="/" class="logo"
+              ><img src="./images/anonymous_logo.png" alt="ANONYMOUS"
+            /></a>
+            <div class="main-menu">
+              <ul class="menu">
+                <li><a href="javascript:void(0)">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+              </ul>
             </div>
+          </div>
         </header>
+
+        <!--로그인-->
+        <br><br><br><br><br><br><br><br><br><br>
+        <section>
+          <form action="index.html" method="post">
+
+            <p><h2>ID로그인</h2></p>
+            <p style="text-align: left; font-size:12px; color:#666"><label for="id_txt">username</label></p>
+            <p>
+              <input type="text" id="id_txt" placeholder="아이디" class="size">
+            </p>
+            <p style="text-align: left; font-size:12px; color:#666">
+              <label for="pwd_txt">password</label>
+            </p>
+            <p>
+              <input type="password" id="pwd_txt" placeholder="비밀번호" class="size">
+            </p>
+            <input type="submit" value="로그인">
+          </form>
+
+          <hr>
+
+        </section>
+          <p>
+            <a href="join.html" >회원가입 페이지로 이동</a>
+          </p>
+
     </body>
