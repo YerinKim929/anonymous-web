@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  background-color: #000;
+}
+
+.container {
+  padding: 50px 0;
+  background-color: orange;
+}
+
+.container .screens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container .screens .screen {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #555;
+}
+
+.container .screens .screen:hover {
+}
+
+.option {
+  width: 100%;
+  bottom: 0;
+  background-color: #272727;
+  position: fixed;
+  z-index: 9;
+  border-top: 1px solid #c8c8c8;
+}
+
+.option .inner {
+  height: 100px;
+}
