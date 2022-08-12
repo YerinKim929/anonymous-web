@@ -1,14 +1,51 @@
 body {
-  height: 100vh;
+  height: auto;
   background-color: #000;
 }
 
 .container {
-  padding: 50px 0;
+  height: auto;
   background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+
+.container .channels {
+  background-color: #272727;
+  left: 0;
+  width: 350px;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+}
+
+.container .channels .logos {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c8c8c8;
+  box-sizing: border-box;
+}
+
+.container .channels .logo {
+  margin: 10px 0;
+}
+
+.container .channels span {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 15px;
 }
 
 .container .screens {
+  height: 100vh;
+  position: absolute;
+  background-color: royalblue;
+  left: 350px;
+  right: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
