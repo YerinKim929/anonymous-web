@@ -107,16 +107,16 @@ body {
   background-color: royalblue;
   left: 350px;
   right: 0;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  align-items: center;
+  padding: 20px 20px;
 }
 
 .container .screens .screen {
-  width: 400px;
+  min-width: 400px;
   height: 250px;
   margin: 10px;
   border-radius: 2px;
