@@ -17,3 +17,6 @@ new Swiper(".picture .swiper-container", {
     delay: 5000, // 5초
   },
 });
+
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear(); //2022
