@@ -66,6 +66,9 @@
       format("opentype");
 }
 
+body {
+  margin: 0 auto;
+}
 /* body, table, div, p ,span{font-family:'Nanum Gothic';} */
 body,
 table,
@@ -84,7 +87,8 @@ label p {
   font-size: 12px;
   color: #666;
 }
-.find a {
+a {
+  text-decoration: none;
   color: #333;
 }
 #con {
@@ -129,6 +133,7 @@ label p {
   /* margin-left:10px; */
   border: none;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .btn {
@@ -141,7 +146,9 @@ label p {
   cursor: pointer;
   border-radius: 5px;
 }
-
+.btn:hover {
+  background: #6926ac;
+}
 hr {
   margin-top: 20px;
   background: #eee;
@@ -152,6 +159,18 @@ hr {
 }
 .find span {
   padding-left: 10px;
+}
+.find span::before {
+  content: "|";
+  color: #333;
+  padding-right: 10px;
+}
+.find span:nth-child(1):before {
+  content: none;
+}
+
+.find span:nth-child(1) {
+  padding-left: 0px;
 }
 
 .find a:hover {
